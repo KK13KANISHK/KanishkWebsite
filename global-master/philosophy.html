@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Philosophy</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom, #000000, #121212, #1c1c1c);
+      color: #fff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 2rem;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #00e6e6;
+      background: linear-gradient(to right, #00e6e6, #00aaff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: slideIn 1.5s ease-out;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #ddd;
+      margin-bottom: 2rem;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    img {
+      width: 100%;
+      max-width: 600px;
+      margin: 1rem 0;
+      border-radius: 10px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+      opacity: 0;
+      animation: zoomIn 2s ease-in-out forwards;
+    }
+
+    a {
+      text-decoration: none;
+      color: #00aaff;
+      font-weight: bold;
+      transition: color 0.2s;
+    }
+
+    a:hover {
+      color: #fff;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideIn {
+      from { transform: translateY(-100%); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes zoomIn {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Philosophy</h1>
+  <p>These are the core beliefs and values I live by.</p>
+  <img src="https://source.unsplash.com/600x400/?idea,lightbulb" alt="Philosophy">
+  <p><a href="index.html">Back to Home</a></p>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom, #000000, #121212, #1c1c1c);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+      max-width: 900px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #00aaff;
+      background: linear-gradient(to right, #00e6e6, #00aaff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: slideIn 2s ease-out;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      color: #ddd;
+      animation: fadeIn 3s ease-in-out;
+    }
+
+    .sections {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: linear-gradient(145deg, #242424, #1a1a1a);
+      border-radius: 10px;
+      overflow: hidden;
+      padding: 0;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s, box-shadow 0.3s;
+      width: 250px;
+      text-align: center;
+      transform: translateY(50px);
+      opacity: 0;
+      animation: slideUp 1s ease-out forwards;
+    }
+
+    .card:nth-child(1) { animation-delay: 0.5s; }
+    .card:nth-child(2) { animation-delay: 0.8s; }
+    .card:nth-child(3) { animation-delay: 1.1s; }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.6);
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .card h2 {
+      font-size: 1.5rem;
+      margin: 1rem 0 0.5rem;
+      color: #00e6e6;
+    }
+
+    .card p {
+      font-size: 1rem;
+      color: #aaa;
+      padding: 0 1rem 1.5rem;
+    }
+
+    .card a {
+      text-decoration: none;
+      color: #00e6e6;
+      font-weight: bold;
+      transition: color 0.2s;
+    }
+
+    .card a:hover {
+      color: #fff;
+    }
+
+    footer {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #666;
+      opacity: 0;
+      animation: fadeIn 2.5s ease-in-out forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideIn {
+      from { transform: translateX(-100%); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Discover My Story</h1>
+    <p>Welcome! Learn more about my journey, values, and achievements.</p>
+    <div class="sections">
+      <!-- Winners Card -->
+      <div class="card">
+        <img src="https://source.unsplash.com/250x150/?trophy,success" alt="Winners">
+        <h2>Winners</h2>
+        <p>Highlight your achievements and accolades.</p>
+        <a href="winners.html">Learn More</a>
+      </div>
+
+      <!-- Philosophy Card -->
+      <div class="card">
+        <img src="https://source.unsplash.com/250x150/?idea,lightbulb" alt="Philosophy">
+        <h2>Philosophy</h2>
+        <p>Share your core beliefs and values.</p>
+        <a href="philosophy.html">Learn More</a>
+      </div>
+
+      <!-- History Card -->
+      <div class="card">
+        <img src="https://source.unsplash.com/250x150/?history,book" alt="History">
+        <h2>History</h2>
+        <p>Tell your story and milestones.</p>
+        <a href="history.html">Learn More</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2024 Your Name. All rights reserved.
+  </footer>
+</body>
+</html>
